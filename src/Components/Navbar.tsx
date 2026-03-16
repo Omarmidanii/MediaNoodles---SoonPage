@@ -13,19 +13,21 @@ const Navbar = () => {
         {/* Link to Behance */}
         <a
           href="https://www.behance.net/media-noodles"
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
-          className="font-minion font-bold text-[3.8vw] md:text-[15px] uppercase hover:opacity-60 transition-opacity"
-        >
+          className="group relative font-minion font-bold text-[3.8vw] md:text-[15px] uppercase transition-all duration-300 hover:tracking-widest"        >
           Work
-        </a>
 
+          <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+        </a>
         {/* Link to Email */}
         <a
           href="mailto:Info@media-noodles.com"
-          className="font-minion font-bold text-[3.8vw] md:text-[15px] uppercase hover:opacity-60 transition-opacity"
+          className="group relative font-minion font-bold text-[3.8vw] md:text-[15px] uppercase transition-all duration-300 hover:tracking-widest"
         >
           Contact
+
+          <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
         </a>
       </div>
     </nav>
