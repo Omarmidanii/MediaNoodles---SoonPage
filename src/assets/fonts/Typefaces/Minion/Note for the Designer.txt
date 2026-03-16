@@ -1,0 +1,10 @@
+Note for Designer:
+Variable Type Technology: Minion Variable Concept is a "Variable" typeface.
+
+This means that all weights (from Light to Black) are embedded within a single OpenType file rather than individual files for each weight.
+
+This typeface is an Adobe-native type. To use it, simply install both provided OpenType files (Roman and Italic), and all weights will be automatically available in all Adobe software as well as Figma.
+
+In your design software, you can select specific weights from the font style dropdown or use the "Variable" slider for custom weight adjustments.
+
+If you face any issues, please contact Media Noodles.

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "minion";
+  src: url("./assets/fonts/Typefaces/Minion/MinionVariableConcept-Roman.otf")
+    format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "minion";
+  src: url("./assets/fonts/Typefaces/Minion/MinionVariableConcept-Italic.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "somar";
+  src: url("./assets/fonts/Typefaces/Somar sans tif/Condensed/SomarSans-BlackCondensed.ttf")
+    format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "somar";
+  src: url("./assets/fonts/Typefaces/Somar sans tif/Condensed/SomarSans-RegularCondensed.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lifta";
+  src: url("./assets/fonts/Typefaces/Lifta/Liftaswashfixed-Regular.otf")
+    format("opentype");
+  font-weight: 400;
+}
