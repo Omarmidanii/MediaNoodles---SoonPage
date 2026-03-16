@@ -9,6 +9,6 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] })
   ],
   server: {
-    allowedHosts: ['brown-doodles-check.loca.lt']
+    allowedHosts: ['rich-sites-jump.loca.lt']
   }
 })

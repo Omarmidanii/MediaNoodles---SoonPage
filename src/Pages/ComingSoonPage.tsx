@@ -1,5 +1,60 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import { motion, type Variants } from "framer-motion";
+
+const container: Variants = { 
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.25
+    }
+  }
+};
+
+const lineAnimation: Variants = {
+  hidden: {
+    opacity: 0,
+    x: -120
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.9,
+      ease: "easeOut"
+    }
+  }
+};
+const paragraphAnimation: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: 0.6,
+      ease: "easeOut"
+    }
+  }
+};
+const imageAnimation: Variants = {
+  hidden: {
+    opacity: 0,
+    x: 120
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1.2,
+      delay: 1,
+      ease: "easeOut"
+    }
+  }
+};
 
 const StarIcon = () => (
   <img
@@ -20,18 +75,30 @@ const ComingSoonPage = () => {
 
       <main className="flex-grow flex flex-col items-center justify-start py-6">
         <div className="w-full max-w-[1400px] flex flex-col items-center">
-          <div className="hidden md:flex flex-col w-fit px-3">
-            <h1 className="font-somar text-[45px] lg:text-[60px] font-bold leading-[0.6] tracking-normal uppercase whitespace-nowrap">
+          <motion.div
+              className="hidden md:flex flex-col w-fit px-3"
+              variants={container}
+              initial="hidden"
+              animate="show"
+            >
+            <motion.h1
+              variants={lineAnimation}
+              className="font-somar text-[45px] lg:text-[60px] font-bold leading-[0.6] tracking-normal uppercase whitespace-nowrap"
+            >
               We are cooking up
               <StarIcon />
               something <Dash />
-            </h1>
-            <h1 className="font-somar text-[45px] lg:text-[60px] font-bold leading-[0.6] tracking-normal uppercase whitespace-nowrap self-end">
+            </motion.h1>
+
+            <motion.h1
+              variants={lineAnimation}
+              className="font-somar text-[45px] lg:text-[60px] font-bold leading-[0.6] tracking-normal uppercase whitespace-nowrap self-end"
+            >
               special for you
               <StarIcon />
               stay tuned
-            </h1>
-          </div>
+            </motion.h1>
+          </motion.div>
           <div className="w-full flex flex-col md:hidden items-start text-left space-y-0 px-6">
             <h1 className="font-somar text-[10.5vw] font-bold leading-[0.9] tracking-tight uppercase whitespace-nowrap">
               We are cooking
@@ -51,15 +118,23 @@ const ComingSoonPage = () => {
           </div>
 
           <div className="w-full mt-2 md:mt-8 flex flex-col items-end md:items-start px-8">
-            <p className="font-somar text-[3.8vw] max-w-[62vw] text-left leading-[1.3] mb-12 md:text-[23px] md:font-bold md:leading-[1.1] md:max-w-none md:mb-6 md:tracking-tight">
-              in the meantime, you can <br className="hidden md:block" />
-              check out our work on <br className="hidden md:block" />
-              Behance and contact us via <br className="hidden md:block" />
-              <span className="md:hidden">Email.</span>
-              <span className="hidden md:inline">Whatsapp or Email.</span>
-            </p>
+          <motion.p
+            variants={paragraphAnimation}
+            initial="hidden"
+            animate="show"
+            className="font-somar text-[3.8vw] max-w-[62vw] text-justify hyphens-auto leading-[1.3] mb-12 md:text-[23px] md:font-bold md:leading-[1.1] md:max-w-[320px] md:mb-6 md:tracking-tight"
+          >
+            in the meantime, you can check out our work on Behance and contact us via 
+            <span className="md:hidden"> Email.</span>
+            <span className="hidden md:inline"> Whatsapp or Email.</span>
+          </motion.p>
 
-            <div className="w-full flex justify-center">
+            <motion.div
+              variants={imageAnimation}
+              initial="hidden"
+              animate="show"
+              className="w-full flex justify-center"
+            >
               <img
                 src="/MediaWeb.png"
                 alt="Media Noodles Arabic Desktop"
@@ -71,11 +146,10 @@ const ComingSoonPage = () => {
                 alt="Media Noodles Arabic Mobile"
                 className="block md:hidden w-[100vw] max-w-[550px] h-auto object-contain"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </main>
-
       <Footer />
     </div>
   );
