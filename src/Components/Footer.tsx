@@ -6,7 +6,9 @@ const Footer = () => {
     <motion.footer
       initial={{ y: 40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }} className="w-full bg-[#5D45FF] text-white px-3 py-4 md:px-6 md:py-1 mt-auto">
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+      className="w-full bg-[#5D45FF] text-white px-3 pt-1 pb-4 md:px-6 md:py-1 mt-0"
+    >
       <div className="flex flex-col w-full max-w-[1400px] mx-auto">
         <div>
           <h2 className="font-Lifta font-black text-[20px] md:text-[30px] uppercase ">

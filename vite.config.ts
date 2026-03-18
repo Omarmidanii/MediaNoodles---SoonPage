@@ -9,6 +9,6 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] })
   ],
   server: {
-    allowedHosts: ['rich-sites-jump.loca.lt']
+    allowedHosts: ['bumpy-friends-watch.loca.lt']
   }
 })
