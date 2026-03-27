@@ -1,34 +1,38 @@
+import Logo from "../assets/Logo.png";
+
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-start w-full px-4 py-4 md:px-10 md:py-5 bg-transparent">
-      <div className="flex flex-col leading-[0.8]">
-        <span className="font-minion font-bold text-[4.5vw] md:text-[32px] tracking-wide text-black">
-          MEDIA NOODLES
-        </span>
-        <span className="font-minion font-bold text-[3.0vw] md:text-[20px] tracking-wide mt-1 text-black uppercase">
-          CREATIVE AGENCY
-        </span>
-      </div>
-      <div className="flex gap-[5vw] md:gap-10">
-        {/* Link to Behance */}
-        <a
-          href="https://www.behance.net/media-noodles"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative font-minion font-bold text-[3.8vw] md:text-[15px] uppercase transition-all duration-300 hover:tracking-widest"        >
-          Work
-
-          <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+    <nav className="w-full bg-transparent px-6 py-5 md:px-10 md:py-6">
+      <div className="flex w-full items-start justify-between">
+        {/* Logo image */}
+        <a href="/" aria-label="Media Noodles Home" className="block shrink-0">
+          <img
+            src={Logo}
+            alt="Media Noodles"
+            className="h-auto w-[150px] md:w-[220px] object-contain"
+          />
         </a>
-        {/* Link to Email */}
-        <a
-          href="mailto:Info@media-noodles.com"
-          className="group relative font-minion font-bold text-[3.8vw] md:text-[15px] uppercase transition-all duration-300 hover:tracking-widest"
-        >
-          Contact
 
-          <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
-        </a>
+        {/* Right links */}
+        <div className="flex gap-[10vw] pt-1 md:gap-24">
+          <a
+            href="https://www.behance.net/media-noodles"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative font-minion text-[4.2vw] font-bold leading-none text-black transition-all duration-300 hover:tracking-[0.06em] md:text-[28px]"
+          >
+            Work
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full" />
+          </a>
+
+          <a
+            href="mailto:Info@media-noodles.com"
+            className="group relative font-minion text-[4.2vw] font-bold leading-none text-black transition-all duration-300 hover:tracking-[0.06em] md:text-[28px]"
+          >
+            Contact
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full" />
+          </a>
+        </div>
       </div>
     </nav>
   );

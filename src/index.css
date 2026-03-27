@@ -6,7 +6,8 @@
   font-family: "minion";
   src: url("./assets/fonts/Typefaces/Minion/MinionVariableConcept-Roman.otf")
     format("opentype");
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 200 900;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
     format("opentype");
   font-weight: 400;
   font-style: italic;
+  font-weight: 200 900;
 }
 
 @font-face {
