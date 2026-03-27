@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Linkedin, Instagram } from "lucide-react";
 
 const LINKEDIN_URL = "https://www.linkedin.com/";
-const INSTAGRAM_URL = "https://www.instagram.com/YOUR_HANDLE";
+const INSTAGRAM_URL = "https://www.instagram.com/media_noodles";
 const BEHANCE_URL = "https://www.behance.net/media-noodles";
 
 const Footer = () => {
