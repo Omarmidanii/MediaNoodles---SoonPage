@@ -155,21 +155,21 @@ const ComingSoonPage = () => {
 
           {/* MOBILE */}
           <motion.div
-            className="flex w-full flex-col items-start px-2 md:hidden"
+            className="flex w-full flex-col items-start text-left pl-10 pr-2 md:hidden"
             variants={container}
             initial="hidden"
             animate="show"
           >
             <motion.h1
               variants={lineAnimation}
-              className="whitespace-nowrap font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
+              className="w-full whitespace-nowrap text-left font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
             >
               WE ARE COOKING
             </motion.h1>
 
             <motion.h1
               variants={lineAnimation}
-              className="whitespace-nowrap font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
+              className="w-full whitespace-nowrap text-left font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
             >
               UP
               <StarIcon />
@@ -178,14 +178,14 @@ const ComingSoonPage = () => {
 
             <motion.h1
               variants={lineAnimation}
-              className="whitespace-nowrap font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
+              className="w-full whitespace-nowrap text-left font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
             >
               SPECIAL FOR YOU
             </motion.h1>
 
             <motion.h1
               variants={lineAnimation}
-              className="whitespace-nowrap font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
+              className="w-full whitespace-nowrap text-left font-somar text-[9vw] font-bold uppercase leading-[0.92] tracking-[-0.03em]"
             >
               <StarIcon />
               STAY TUNED
